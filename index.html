@@ -6,17 +6,35 @@
 </head>
 <body>
 
-<h1>Inventory and Sales Management System</h1>
+<h1>Inventory System</h1>
 
-<p>This project is built using C++ for backend logic and CSV for data storage.</p>
+<div class="container">
 
-<h2>Features</h2>
-<ul>
-    <li>Add products</li>
-    <li>Restock inventory</li>
-    <li>Record sales with discount</li>
-    <li>View stock</li>
-</ul>
+    <h2>Add Product</h2>
+    <input id="name" placeholder="Name">
+    <input id="price" placeholder="Price">
+    <input id="qty" placeholder="Quantity">
+    <button onclick="addProduct()">Add</button>
+
+    <h2>Restock</h2>
+    <input id="restockId" placeholder="Product ID">
+    <input id="restockQty" placeholder="Amount">
+    <button onclick="restock()">Restock</button>
+
+    <h2>Sell</h2>
+    <input id="sellId" placeholder="Product ID">
+    <input id="sellQty" placeholder="Quantity">
+    <input id="discount" placeholder="Discount">
+    <button onclick="sell()">Sell</button>
+
+    <h2>Products</h2>
+    <button onclick="display()">Refresh</button>
+
+    <div id="output"></div>
+
+</div>
+
+<script src="app.js"></script>
 
 </body>
 </html>
